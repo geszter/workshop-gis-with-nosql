@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--Caution! This code was written to show the usage of a map in OpenLayers 3 with Django/Python + MongoDB in a very simple way for easier understanding. Hence, the code has nearly no security-mechanisms and should NOT BE USED UNMODIFIED in a real project!--> 
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title>Pubs in Helsinki</title>
+	<!-- Including of the OpenLayer-Libraries-->
+    <link rel="stylesheet" href="{% static 'css/ol.css' %}" type="text/css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/popup.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/ol3-layerswitcher.css' %}">
+    <script src="{% static 'js/ol.js' %}"></script>
+	<script src="{% static 'js/ol3-popup.js' %}"></script>
+	<script src="{% static 'js/ol3-layerswitcher.js' %}"></script>
+	<script src="{% static 'js/helsinki-pubs.js' %}"></script>
+
+  </head>
+  <body onload="init()">
+  <!-- Transmitting the data from views.py -->
+  <input type="hidden" id="mdb_fb" name="variable" value="{{ mdb_Data_fb }}"/>
+    <input type="hidden" id="mdb_tw" name="variable" value="{{ mdb_Data_tw }}"/>
+	<input type="hidden" id="mdb_fs" name="variable" value="{{ mdb_Data_fs }}"/>
+	<input type="hidden" id="mdb_osm" name="variable" value="{{ mdb_Data_osm }}"/>
+	<input type="hidden" id="mdb_allpubs" name="variable" value="{{ mdb_Data_allpubs }}"/>
+	<input type="hidden" id="mdb_small" name="variable" value="{{ mdb_Data_smallarea }}"/>
+	<br>
+    
+
+    <!-- Creates the form for the map -->
+    <!-- <a class="skiplink" href="#map">Go to map</a> -->
+    <div id="map" class="map" tabindex="0" ></div>
+
+    <br/>
+
+  <script>
+    var static_url = "{% static 'images/' %}";
+</script>  
+
+
+  </body>
+</html>
