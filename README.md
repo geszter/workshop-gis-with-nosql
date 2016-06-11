@@ -13,7 +13,7 @@ To work locally at the hands-on session you have to install a couple of things:
   >pip install simplejson     
   >pip install pymongo     
 
-(4. optional: install pycharm: https://www.jetbrains.com/pycharm/ )    
+(4. optional: install PyCharm (Python IDE) : https://www.jetbrains.com/pycharm/ )    
 5. load the database dump 'pubs' to MongoDB    
    download the dbdump/pubs folder to C:\data\dumps    
    type the following in a command line:    
