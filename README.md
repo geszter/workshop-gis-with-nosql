@@ -1,7 +1,7 @@
 # workshop-gis-with-nosql
 
 To work locally at the hands-on session you have to install a couple of things:    
-1. MongoDB: https://www.mongodb.com/download-center?jmp=nav#community (choose one according to your system, SSL is not necessary)    
+1. MongoDB: https://www.mongodb.com/download-center?jmp=nav#community (choose one according to your operating system, SSL is not necessary)    
   if possible, install it to C:\MongoDB     
   create a new folder: C:\data\db    
 2. Python3: https://www.python.org/downloads/    
