@@ -27,7 +27,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     pip3 install django simplejson pymongo
 
     # Load database dumps.
-    cd /vagrant/workshop/dbdump && mongorestore -d pubs pubs/
+    cd /vagrant/dbdump && mongorestore -d pubs pubs/
 
     # Move to /vagrant directory by default.
     echo "cd /vagrant" >> /home/vagrant/.bash_profile
