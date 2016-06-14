@@ -409,4 +409,6 @@ docs_smallarea =[]
 Don't forget to add the smallarea documents to the last line:
 ```Python
 'data_smallarea':docs_smallarea
-```
+```      
+Now if you refresh the map, you will see black markers with numbers on it. If the number shows more than the actual tweets around it, that is because there are some tweets that are posted on the exact same spot.    
+So which is the most frequented pub nearby?
