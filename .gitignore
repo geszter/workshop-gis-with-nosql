@@ -46,6 +46,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Vagrant files
+.vagrant
+
 pubs
 GeoTransformer.pyc
 __pycache__
