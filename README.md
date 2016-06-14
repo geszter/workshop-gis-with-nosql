@@ -26,12 +26,12 @@ If you use [Vagrant](https://www.vagrantup.com), you can also:
 
 * Run `vagrant up` in the repository.
 
-* Connect to the vagrant virtual machine with `vagrant ssh`.
+* Connect to the vagrant virtual machine with `vagrant ssh`:
 
-* Connect to MongoDB by executing `mongo` from anywhere.
+    * Connect to MongoDB by executing `mongo` from anywhere.
 
-* To run the Django application:
+    * To run the Django application:
 
-    * Execute `cd /vagrant/map && python3 manage.py runserver 0.0.0.0:8000` inside the virtual machine.
+        * Execute `cd /vagrant/map && python3 manage.py runserver 0.0.0.0:8000` inside the virtual machine.
 
-    * Visit `http://localhost:8000` in your browser.
+        * Visit `http://localhost:8000` in your browser.
