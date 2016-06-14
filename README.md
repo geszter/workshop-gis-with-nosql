@@ -28,7 +28,9 @@ If you use [Vagrant](https://www.vagrantup.com), you can also:
 
 * Connect to the vagrant virtual machine with `vagrant ssh`.
 
-* To run the django application:
+* Connect to MongoDB by executing `mongo` from anywhere.
+
+* To run the Django application:
 
     * Execute `cd /vagrant/map && python3 manage.py runserver 0.0.0.0:8000` inside the virtual machine.
 
