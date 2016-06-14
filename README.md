@@ -19,3 +19,17 @@ To work locally at the hands-on session you have to install a couple of things:
    type the following in a command line:    
     C:\MongoDB\Server\3.2\bin>mongorestore -d pubs C:\data\pubs         
 6. download the django project to C:\django
+
+## Vagrant
+
+If you use [Vagrant](https://www.vagrantup.com), you can also:
+
+* Run `vagrant up` in the repository.
+
+* Connect to the vagrant virtual machine with `vagrant ssh`.
+
+* To run the django application:
+
+    * Execute `cd /vagrant/map && python3 manage.py runserver 0.0.0.0:8000` inside the virtual machine.
+
+    * Visit `http://localhost:8000` in your browser.
